@@ -2,8 +2,8 @@ package cl.dmiranda;
 
 public class Persona {
 
-	private String nombre;
-	private String rut;
+	protected String nombre;
+	protected String rut;
 	
 	public Persona(String nombre, String rut) {
 		this.nombre=nombre;

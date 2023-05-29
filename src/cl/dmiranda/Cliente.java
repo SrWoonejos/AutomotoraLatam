@@ -1,25 +1,21 @@
 package cl.dmiranda;
 
 public class Cliente extends Persona {
-	public Cliente(String nombre, String rut) {
+	
+	private int edad;
+	
+	public Cliente(String nombre, String rut, int edad)  {
 		super(nombre, rut);
+		this.setEdad(edad);	
 	}
 
-	public static Object getEdad() {
-		try {
-			try {
-				return getEdad();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return null;
+	public int getEdad() {
+		return edad;
 	}
 
-	public void setEdad(String edad) {
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
+
+	
 }
